@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja bem vindo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <body class="body"> 
+        <div class="fundotodo">
+            <h1>Aceita entrar nessa viagem?</h1>
+            <img src="img/bg1.png">
+            <button onclick="redirecionarParaPagina('sim')">Sim</button>
+            <button onclick="redirecionarParaPagina('nao')">Não</button>
+
+    <script>
+        function redirecionarParaPagina(resposta) {
+            if (resposta === 'sim') {
+                window.location.href = 'Fase1.html'; // Redireciona para a página "pagina_sim.html"
+            } else if (resposta === 'nao') {
+                window.location.href = 'Tristeza.html'; // Redireciona para a página "pagina_nao.html"
+            }
+        }
+    </script>
+    </body>
+</head>
+</html>
